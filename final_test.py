@@ -66,7 +66,7 @@ def get_image():
     for files in os.listdir("static"):
         if(files.endswith(".jpg")):
             os.unlink("static/" + files)
-    img_data=urlopen('https://firebasestorage.googleapis.com/v0/b/picfi-79b51.appspot.com/o/image.jpg?alt=media&token=5944cfb2-6e3a-4861-a0e3-8e05298ea787').read()
+    img_data=urlopen('https://firebasestorage.googleapis.com/v0/b/picfi-79b51.appspot.com/o/image.jpg?alt=media&token='############').read()
     rr = random.randint(1,9999)
     filename = "dataset/test/" + str(rr) + ".jpg"
     file_name3 = str(rr) + ".jpg"
